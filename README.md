@@ -21,14 +21,13 @@ Creates XFDF annotation files from an Excel-based input to overlay field-level m
 
 ## Macro Parameters:**
 
-|--------------------------------------------------------------------------------------|
-| Parameter     | Required | Default         | Description                             |
-|--------------------------------------------------------------------------------------|
-| anno_location | No       | Macro directory | Path to Excel file and blank PDF        |
-| page_orient   | No       | Portrait        | PDF page orientation                    |
-| font_sz       | No       | 10              | Annotation font size                    |
-| debug         | No       | N               | Retain intermediate datasets (Y/N)      |
-|--------------------------------------------------------------------------------------|
+| **Parameter**   | **Required** | **Default**     | **Description**                                  |
+| --------------- | ------------ | --------------- | ------------------------------------------------ |
+| `anno_location` | No           | Macro directory | Path to Excel file and blank CRF PDF.            |
+| `page_orient`   | No           | `Portrait`      | PDF page orientation (`Portrait` / `Landscape`). |
+| `font_sz`       | No           | `10`            | Annotation font size.                            |
+| `debug`         | No           | `N`             | Retain intermediate datasets (`Y` / `N`).        |
+
 
 ## Example Usage
 
