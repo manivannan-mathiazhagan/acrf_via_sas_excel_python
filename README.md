@@ -1,6 +1,7 @@
-# SAS PDF Annotation Toolkit
+# 🔍 aCRF Builder
 
-A set of SAS macros to automate the creation of FDA-compliant annotated CRFs (aCRFs), including XFDF annotations, PDF bookmarks, and an optional Table of Contents (TOC) using PDFtk and Python.
+**Automate XFDF annotations, PDF bookmarks, and Table of Contents generation for FDA-compliant annotated CRFs.**  
+Seamlessly combine SAS, PDFtk, and Python into one efficient toolkit.
 
 ## 📦 Included Macros
 
@@ -23,10 +24,10 @@ Creates XFDF annotation files from an Excel-based input to overlay field-level m
 
 | **Parameter**   | **Required** | **Default**     | **Description**                                  |
 | --------------- | ------------ | --------------- | ------------------------------------------------ |
-| `anno_location` | No           | Macro directory | Path to Excel file and blank CRF PDF.            |
-| `page_orient`   | No           | `Portrait`      | PDF page orientation (`Portrait` / `Landscape`). |
-| `font_sz`       | No           | `10`            | Annotation font size.                            |
-| `debug`         | No           | `N`             | Retain intermediate datasets (`Y` / `N`).        |
+| `anno_location` | ❌ No        | Macro directory | Path to Excel file and blank CRF PDF.            |
+| `page_orient`   | ❌ No        | `Portrait`      | PDF page orientation (`Portrait` / `Landscape`). |
+| `font_sz`       | ❌ No        | `10`            | Annotation font size.                            |
+| `debug`         | ❌ No        | `N`             | Retain intermediate datasets (`Y` / `N`).        |
 
 
 ## Example Usage
@@ -54,11 +55,11 @@ Ensure `PDFtk` and `Python` are available in your system.
 ## Macro Parameters
 | **Parameter** | **Required** | **Default**     | **Description**                               |
 | ------------- | ------------ | --------------- | --------------------------------------------- |
-| `FILE_PATH`   | No           | Macro directory | Path where input/output PDF files are stored. |
-| `INPDF`       | Yes          | —               | Name of input (annotated) PDF file.           |
-| `OUTPDF`      | No           | `aCRF`          | Output PDF file name.                         |
-| `Create_TOC`  | No           | `N`             | Whether to generate a TOC (`Y` / `N`).        |
-| `TOC_SIZE`    | No           | `12`            | Font size for the TOC.                        |
+| `FILE_PATH`   | ❌ No        | Macro directory | Path where input/output PDF files are stored. |
+| `INPDF`       | ✅ Yes       | —               | Name of input (annotated) PDF file.           |
+| `OUTPDF`      | ❌ No        | `aCRF`          | Output PDF file name.                         |
+| `Create_TOC`  | ❌ No        | `N`             | Whether to generate a TOC (`Y` / `N`).        |
+| `TOC_SIZE`    | ❌ No        | `12`            | Font size for the TOC.                        |
 
 
 ## Example Usage
