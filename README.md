@@ -52,15 +52,14 @@ Adds bookmarks to a PDF and optionally generates a front-page Table of Contents 
 Ensure `PDFtk` and `Python` are available in your system.
 
 ## Macro Parameters
-|--------------------------------------------------------------------------------------|
-| Parameter     | Required | Default         | Description                             |
-|--------------------------------------------------------------------------------------|
-| FILE_PATH     | No       | Macro directory | Path to input/output PDFs               |
-| INPDF         | Yes      | —               | Name of input (annotated) PDF           |
-| OUTPDF        | No       | aCRF            | Output file name                        |
-| Create_TOC    | No       | N               | Whether to generate a TOC (Y/N)         |
-| TOC_SIZE      | No       | 12              | Font size for TOC text                  |
-|--------------------------------------------------------------------------------------|
+| **Parameter** | **Required** | **Default**     | **Description**                               |
+| ------------- | ------------ | --------------- | --------------------------------------------- |
+| `FILE_PATH`   | No           | Macro directory | Path where input/output PDF files are stored. |
+| `INPDF`       | Yes          | —               | Name of input (annotated) PDF file.           |
+| `OUTPDF`      | No           | `aCRF`          | Output PDF file name.                         |
+| `Create_TOC`  | No           | `N`             | Whether to generate a TOC (`Y` / `N`).        |
+| `TOC_SIZE`    | No           | `12`            | Font size for the TOC.                        |
+
 
 ## Example Usage
 %add_bookmarks(INPDF=blankCRF_Positioned, Create_TOC=Y);
