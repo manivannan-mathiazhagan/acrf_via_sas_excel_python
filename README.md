@@ -64,3 +64,33 @@ Ensure `PDFtk` and `Python` are available in your system.
 ## Example Usage
 %add_bookmarks(INPDF=blankCRF_Positioned, Create_TOC=Y);
 
+## 🐍 Python Script: `create_toc_hypl.py`
+
+This script generates a **Table of Contents (TOC)** for a PDF using its bookmarks and inserts it at the beginning. It also preserves and adjusts original bookmarks with accurate page offsets.
+
+### 🔧 Features
+
+- Extracts existing bookmarks from the input PDF.
+- Dynamically calculates number of TOC pages based on font size.
+- Supports both Portrait and Landscape PDFs.
+- Adds clickable TOC hyperlinks to target sections.
+- Retains and adjusts original PDF bookmarks after TOC insertion.
+
+## 📥 Script Arguments
+
+| **Argument**   | **Required** | **Type** | **Description**                                                  |
+|----------------|--------------|----------|------------------------------------------------------------------|
+| `input.pdf`    | ✅ Yes       | File     | Path to the input PDF file that contains bookmarks.              |
+| `output.pdf`   | ✅ Yes       | File     | Path where the output PDF (with TOC and bookmarks) will be saved.|
+| `font_size`    | ✅ Yes       | Integer  | Font size for the TOC text (e.g., `10`, `12`, `14`).             |
+
+### 📂 Inputs
+
+- Bookmarked input PDF file.
+- Font size for TOC entries (recommended: 10–14).
+
+### 📝 Usage
+
+```bash
+python create_toc_hypl.py input.pdf output.pdf font_size
+
