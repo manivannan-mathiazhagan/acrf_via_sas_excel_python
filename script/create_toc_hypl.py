@@ -10,44 +10,74 @@ def extract_toc_entries(doc):
         entries.append((level, title.strip(), page_num - 1))  # 0-based page numbers
     return entries
 
+def wrap_text(text, max_width, font_size):
+    words = text.split()
+    lines = []
+    current_line = ""
+
+    for word in words:
+        test_line = current_line + " " + word if current_line else word
+        if fitz.get_text_length(test_line, fontsize=font_size) < max_width:
+            current_line = test_line
+        else:
+            if current_line:
+                lines.append(current_line)
+            current_line = word
+
+    if current_line:
+        lines.append(current_line)
+    return lines
+
 def generate_toc_pages(toc_entries, font_size, lines_per_page, toc_page_count):
     toc_doc = fitz.open()
     link_targets = []
     width, height = fitz.paper_size("a4")
-    total_entries = len(toc_entries)
-    total_pages = math.ceil(total_entries / lines_per_page)
+    line_height = font_size * 1.5
 
-    for i in range(total_pages):
-        page = toc_doc.new_page(width=width, height=height)
-        start = i * lines_per_page
-        end = min(start + lines_per_page, total_entries)
+    i = 0
+    page = toc_doc.new_page(width=width, height=height)
+    current_line = 0
+    total_lines = lines_per_page
 
-        for j, (level, title, target_page) in enumerate(toc_entries[start:end]):
-            y = 50 + j * font_size * 1.5
+    for entry in toc_entries:
+        level, title, target_page = entry
+        indent = 20 * (level - 1)
+        title_x = 50 + indent
+        max_page_number_x = width - 60
+        max_text_width = max_page_number_x - title_x - 60  # Leave room for page numbers and dots
+
+        wrapped_lines = wrap_text(title, max_text_width, font_size)
+        num_lines = len(wrapped_lines)
+
+        # Create new page if needed
+        if current_line + num_lines > total_lines:
+            page = toc_doc.new_page(width=width, height=height)
+            current_line = 0
+            i += 1
+
+        top_y = 50 + current_line * line_height
+        bottom_y = top_y + num_lines * line_height
+        rect = fitz.Rect(title_x, top_y - font_size, max_page_number_x, bottom_y)
+        link_targets.append((i, rect, target_page))
+
+        for k, line in enumerate(wrapped_lines):
+            y = 50 + (current_line * line_height)
             displayed_page = target_page + toc_page_count + 1
-            indent = 20 * (level - 1)
-            title_x = 50 + indent
-            max_page_number_x = width - 60  # Right margin for page numbers
-
-            # Measure text widths
-            text_width = fitz.get_text_length(title, fontsize=font_size)
+            text_width = fitz.get_text_length(line, fontsize=font_size)
             page_num_text = str(displayed_page)
             page_num_width = fitz.get_text_length(page_num_text, fontsize=font_size)
 
-            # Determine dot space
-            dots_space = max_page_number_x - page_num_width - (title_x + text_width + 10)
-            num_dots = max(2, int(dots_space / fitz.get_text_length(".", fontsize=font_size)) - 6)
-            dots = "." * num_dots
+            # Dots only on last line
+            if k == num_lines - 1:
+                dots_space = max_page_number_x - page_num_width - (title_x + text_width + 10)
+                num_dots = max(2, int(dots_space / fitz.get_text_length(".", fontsize=font_size)) - 6)
+                dots = "." * num_dots
+                page.insert_text((title_x, y), f"{line} {dots}", fontsize=font_size)
+                page.insert_text((max_page_number_x - page_num_width, y), page_num_text, fontsize=font_size)
+            else:
+                page.insert_text((title_x, y), line, fontsize=font_size)
 
-            # Insert title + dots
-            page.insert_text((title_x, y), f"{title} {dots}", fontsize=font_size)
-
-            # Right-align page number
-            page.insert_text((max_page_number_x - page_num_width, y), page_num_text, fontsize=font_size)
-
-            # Create link rectangle
-            rect = fitz.Rect(title_x, y - font_size, max_page_number_x, y + 5)
-            link_targets.append((i, rect, target_page))
+            current_line += 1
 
     return toc_doc, link_targets
 
@@ -91,7 +121,7 @@ def main():
     first_page = original[0]
     width, height = first_page.rect.width, first_page.rect.height
     portrait = height > width
-    page_height = max(width, height)  # always treat larger side as height
+    page_height = max(width, height)  # treat larger side as height
 
     top_margin = 50
     bottom_margin = 50
@@ -99,14 +129,15 @@ def main():
     line_height = font_size * 1.5
     lines_per_page = int(usable_height // line_height)
 
-    toc_page_count = math.ceil(len(toc_entries) / lines_per_page)
-
+    toc_page_count = 0  # Temp, will recalculate after wrapping
     print(f"Page orientation: {'Portrait' if portrait else 'Landscape'}")
-    print(f"Calculated lines per page: {lines_per_page}")
-    print(f"TOC will span {toc_page_count} page(s)")
+    print(f"Initial estimate - lines per page: {lines_per_page}")
 
     print("Generating TOC pages with hyperlinks...")
     toc_pdf, link_targets = generate_toc_pages(toc_entries, font_size, lines_per_page, toc_page_count)
+    toc_page_count = len(toc_pdf)  # Accurate count now
+
+    print(f"TOC will span {toc_page_count} page(s)")
 
     print("Merging TOC and original PDF...")
     final = fitz.open()
