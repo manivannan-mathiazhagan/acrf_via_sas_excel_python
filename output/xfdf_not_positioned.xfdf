@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve"><annots>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="10001 "
+ page="0 "
+ style="solid"
+ rect="0 ,510 ,121.236 ,528 "
+ subject="  "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">DM (Demographics) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="2 "
+ page="0 "
+ style="solid"
+ rect="10 ,490 ,52.26 ,505 "
+ subject="SUBJID "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SUBJID </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="3 "
+ page="0 "
+ style="solid"
+ rect="20 ,480 ,61.65 ,495 "
+ subject="DMDTC "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">DMDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="4 "
+ page="0 "
+ style="solid"
+ rect="30 ,470 ,230.19 ,485 "
+ subject="SUBJINIT "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SUPPDM.QVAL when QNAM = SUBJINIT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="5 "
+ page="0 "
+ style="solid"
+ rect="40 ,460 ,94.01 ,475 "
+ subject="BRTHDTC "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">BRTHDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="6 "
+ page="0 "
+ style="solid"
+ rect="50 ,450 ,83.67 ,465 "
+ subject="RACE "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">RACE </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="7 "
+ page="0 "
+ style="solid"
+ rect="60 ,440 ,85.26 ,455 "
+ subject="SEX "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SEX </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="8 "
+ page="0 "
+ style="solid"
+ rect="70 ,430 ,112.8 ,445 "
+ subject="ETHNIC "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">ETHNIC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="9 "
+ page="0 "
+ style="solid"
+ rect="80 ,420 ,168.5 ,435 "
+ subject="NSUB "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="10 "
+ page="0 "
+ style="solid"
+ rect="90 ,410 ,178.5 ,425 "
+ subject="NSUB "
+ title="DM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="10011 "
+ page="0 "
+ style="solid"
+ rect="20 ,510 ,134.156 ,528 "
+ subject="  "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SV (Subject Visits) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="12 "
+ page="0 "
+ style="solid"
+ rect="30 ,490 ,133.72 ,505 "
+ subject="SVSTDTC/SVENDTC "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SVSTDTC/SVENDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="13 "
+ page="0 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="40 ,480 ,70.51 ,495 "
+ subject="VISIT "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VISIT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="10014 "
+ page="1 "
+ style="solid"
+ rect="0 ,510 ,114.156 ,528 "
+ subject="  "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SV (Subject Visits) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="15 "
+ page="1 "
+ style="solid"
+ rect="10 ,490 ,113.72 ,505 "
+ subject="SVSTDTC/SVENDTC "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SVSTDTC/SVENDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="16 "
+ page="1 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="20 ,480 ,50.51 ,495 "
+ subject="VISIT "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VISIT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="17 "
+ page="1 "
+ style="solid"
+ rect="30 ,470 ,118.5 ,485 "
+ subject="NSUB "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="10018 "
+ page="1 "
+ style="solid"
+ rect="20 ,510 ,116.48 ,528 "
+ subject="  "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VS (Vital Signs) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="19 "
+ page="1 "
+ style="solid"
+ rect="30 ,490 ,69.39 ,505 "
+ subject="VSDTC "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VSDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="20 "
+ page="1 "
+ style="solid"
+ rect="40 ,480 ,283.33 ,495 "
+ subject="VSORRES/VSORRESU "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VSORRES/VSORRESU when VSTESTCD = DIABP </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="21 "
+ page="1 "
+ style="solid"
+ rect="50 ,470 ,296.09 ,485 "
+ subject="VSORRES/VSORRESU "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VSORRES/VSORRESU when VSTESTCD = SYSBP </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="22 "
+ page="1 "
+ style="solid"
+ rect="60 ,460 ,310.07 ,475 "
+ subject="VSORRES/VSORRESU "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VSORRES/VSORRESU when VSTESTCD = HEIGHT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="23 "
+ page="1 "
+ style="solid"
+ rect="70 ,450 ,322.34 ,465 "
+ subject="VSORRES/VSORRESU "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VSORRES/VSORRESU when VSTESTCD = WEIGHT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="24 "
+ page="1 "
+ style="solid"
+ rect="80 ,440 ,325.49 ,455 "
+ subject="VSORRES/VSORRESU "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VSORRES/VSORRESU when VSTESTCD = PULSE </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="25 "
+ page="1 "
+ style="solid"
+ rect="90 ,430 ,178.5 ,445 "
+ subject="NSUB "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="26 "
+ page="1 "
+ style="solid"
+ rect="100 ,420 ,188.5 ,435 "
+ subject="NSUB "
+ title="VS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="27 "
+ page="10 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,136 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 1 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="28 "
+ page="11 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,135.98 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 2 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="29 "
+ page="12 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,135.98 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 3 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="30 "
+ page="13 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,135.99 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 4 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="31 "
+ page="14 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,135.99 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 5 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="10032 "
+ page="2 "
+ style="solid"
+ rect="0 ,510 ,126.96 ,528 "
+ subject="  "
+ title="MH ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">MH (Medical History) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="33 "
+ page="2 "
+ style="solid"
+ rect="10 ,490 ,59.43 ,505 "
+ subject="MHTERM "
+ title="MH ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">MHTERM </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="34 "
+ page="2 "
+ style="solid"
+ rect="20 ,480 ,74.59 ,495 "
+ subject="MHSTDTC "
+ title="MH ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">MHSTDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="35 "
+ page="2 "
+ style="solid"
+ rect="30 ,470 ,224.21 ,485 "
+ subject="MHENRF "
+ title="MH ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">MHENRF = ONGOING if Yes is checked </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="36 "
+ page="2 "
+ style="solid"
+ rect="40 ,460 ,275.52 ,475 "
+ subject="MHTRT "
+ title="MH ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SUPPMH.QVAL when SUPPMH.QNAM = MHTRT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="37 "
+ page="2 "
+ style="solid"
+ rect="50 ,450 ,287.17 ,465 "
+ subject="MHOUT "
+ title="MH ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SUPPMH.QVAL when SUPPMH.QNAM = MHOUT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="38 "
+ page="2 "
+ style="solid"
+ rect="60 ,440 ,148.5 ,455 "
+ subject="NSUB "
+ title="MH ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="39 "
+ page="2 "
+ style="solid"
+ rect="70 ,430 ,158.5 ,445 "
+ subject="NSUB "
+ title="MH ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="10040 "
+ page="2 "
+ style="solid"
+ rect="20 ,510 ,134.156 ,528 "
+ subject="  "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SV (Subject Visits) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="41 "
+ page="2 "
+ style="solid"
+ rect="30 ,490 ,133.72 ,505 "
+ subject="SVSTDTC/SVENDTC "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SVSTDTC/SVENDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="42 "
+ page="2 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="40 ,480 ,70.51 ,495 "
+ subject="VISIT "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VISIT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="43 "
+ page="2 "
+ style="solid"
+ rect="50 ,470 ,138.5 ,485 "
+ subject="NSUB "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="10044 "
+ page="3 "
+ style="solid"
+ rect="0 ,510 ,185.268 ,528 "
+ subject="  "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">CM (Concomitant Medications) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="45 "
+ page="3 "
+ style="solid"
+ rect="10 ,490 ,98.5 ,505 "
+ subject="NSUB "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="46 "
+ page="3 "
+ style="solid"
+ rect="20 ,480 ,108.5 ,495 "
+ subject="NSUB "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="47 "
+ page="3 "
+ style="solid"
+ rect="30 ,470 ,70.48 ,485 "
+ subject="CMTRT "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">CMTRT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="48 "
+ page="3 "
+ style="solid"
+ rect="40 ,460 ,85.61 ,475 "
+ subject="CMINDC "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">CMINDC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="49 "
+ page="3 "
+ style="solid"
+ rect="50 ,450 ,99.45 ,465 "
+ subject="CMDOSE "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">CMDOSE </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="50 "
+ page="3 "
+ style="solid"
+ rect="60 ,440 ,116.17 ,455 "
+ subject="CMROUTE "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">CMROUTE </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="51 "
+ page="3 "
+ style="solid"
+ rect="70 ,430 ,124.6 ,445 "
+ subject="CMSTDTC "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">CMSTDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="52 "
+ page="3 "
+ style="solid"
+ rect="80 ,420 ,135.69 ,435 "
+ subject="CMENDTC "
+ title="CM ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">CMENDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="10053 "
+ page="3 "
+ style="solid"
+ rect="20 ,510 ,134.156 ,528 "
+ subject="  "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SV (Subject Visits) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="54 "
+ page="3 "
+ style="solid"
+ rect="30 ,490 ,133.72 ,505 "
+ subject="SVSTDTC/SVENDTC "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SVSTDTC/SVENDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="55 "
+ page="3 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="40 ,480 ,70.51 ,495 "
+ subject="VISIT "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VISIT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="56 "
+ page="3 "
+ style="solid"
+ rect="50 ,470 ,138.5 ,485 "
+ subject="NSUB "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="10057 "
+ page="4 "
+ style="solid"
+ rect="0 ,510 ,126.156 ,528 "
+ subject="  "
+ title="AE ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">AE (Adverse Events) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="58 "
+ page="4 "
+ style="solid"
+ rect="10 ,490 ,98.5 ,505 "
+ subject="NSUB "
+ title="AE ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="59 "
+ page="4 "
+ style="solid"
+ rect="20 ,480 ,108.5 ,495 "
+ subject="NSUB "
+ title="AE ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="60 "
+ page="4 "
+ style="solid"
+ rect="30 ,470 ,77.75 ,485 "
+ subject="AETERM "
+ title="AE ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">AETERM </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="61 "
+ page="4 "
+ style="solid"
+ rect="40 ,460 ,92.91 ,475 "
+ subject="AESTDTC "
+ title="AE ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">AESTDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="62 "
+ page="4 "
+ style="solid"
+ rect="50 ,450 ,104 ,465 "
+ subject="AEENDTC "
+ title="AE ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">AEENDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="63 "
+ page="4 "
+ style="solid"
+ rect="60 ,440 ,99.32 ,455 "
+ subject="AESEV "
+ title="AE ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">AESEV </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="64 "
+ page="4 "
+ style="solid"
+ rect="70 ,430 ,109.31 ,445 "
+ subject="AEREL "
+ title="AE ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">AEREL </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="10065 "
+ page="4 "
+ style="solid"
+ rect="20 ,510 ,134.156 ,528 "
+ subject="  "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:12 pt;text-align:left;color:#000000;font-weight:bold;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SV (Subject Visits) </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="66 "
+ page="4 "
+ style="solid"
+ rect="30 ,490 ,133.72 ,505 "
+ subject="SVSTDTC/SVENDTC "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">SVSTDTC/SVENDTC </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="67 "
+ page="4 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="40 ,480 ,70.51 ,495 "
+ subject="VISIT "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">VISIT </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#FFFF96 "
+ name="68 "
+ page="4 "
+ style="solid"
+ rect="50 ,470 ,138.5 ,485 "
+ subject="NSUB "
+ title="SV ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">NOT SUBMITTED </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="69 "
+ page="5 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,136 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 1 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="70 "
+ page="6 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,135.98 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 2 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="71 "
+ page="7 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,135.98 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 3 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="72 "
+ page="8 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,135.99 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 4 for annotations </p
+></body></contents-richtext></freetext>
+<freetext
+ flags="print"
+ color="#BFFFFF "
+ name="73 "
+ page="9 "
+ dashes="3.000000,3.000000" style="dash"
+ rect="0 ,500 ,135.99 ,515 "
+ subject="REF "
+ title="NS ">
+<contents-richtext>
+<body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+ xfa:APIVersion="Acrobat:11.0.0" xfa:spec="2.0.2" 
+ style='font-size:10 pt;text-align:left;color:#000000;font-weight:normal;
+ font-style:normal;font-family:Arial;font-stretch:normal'
+><p dir="ltr">See Page 5 for annotations </p
+></body></contents-richtext></freetext>
+</annots>
+</xfdf>
