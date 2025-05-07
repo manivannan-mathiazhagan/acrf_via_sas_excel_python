@@ -95,3 +95,30 @@ This script generates a **Table of Contents (TOC)** for a PDF using its bookmark
 ```bash
 python create_toc_hypl.py input.pdf output.pdf font_size
 
+## 🔄 End-to-End Workflow
+
+Follow these steps to build your FDA-compliant aCRF:
+
+### 🛠️ Step-by-Step Instructions
+
+1. **Add annotation details** in `ANNOTATION.xlsx`:
+   - Fill the **Annotation** sheet with domain metadata and positions.
+   - Fill the **Length** sheet with character widths per domain/font.
+
+2. **Run `make_xfdf` macro**:
+   - This generates the **unpositioned XFDF** file for annotation.
+
+3. **Import XFDF into PDF Editor**:
+   - Open your blank CRF PDF.
+   - Import the XFDF and **position the annotations correctly**.
+
+4. **Save the positioned annotated PDF**.
+
+5. **Add bookmark details** in the Excel template (if using Excel-driven bookmarks).
+
+6. **Run `add_bookmarks` macro**:
+   - This adds bookmarks to the positioned PDF.
+
+7. **Generate TOC (optional)**:
+   - Set `Create_TOC=Y` when running `add_bookmarks`.
+   - Ensure Python and `create_toc_hypl.py` are available.
