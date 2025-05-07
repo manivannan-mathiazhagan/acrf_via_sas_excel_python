@@ -14,83 +14,111 @@
 # Notes
 #   - Requires Python 3 and PyMuPDF installed (`pip install pymupdf`).
 # ****************************************************************************************************
-
 import sys
 import fitz  # PyMuPDF
 import math
 
 def extract_toc_entries(doc):
     toc = doc.get_toc(simple=True)
-    entries = []
-    for entry in toc:
-        level, title, page_num = entry[:3]
-        entries.append((level, title.strip(), page_num - 1))  # 0-based page numbers
-    return entries
+    return [(level, title.strip(), page_num - 1) for level, title, page_num in toc]
 
-def generate_toc_pages(toc_entries, font_size, lines_per_page, toc_page_count):
+def wrap_text(text, fontsize, max_width):
+    words = text.split(' ')
+    lines = []
+    current_line = words[0]
+    for word in words[1:]:
+        if fitz.get_text_length(current_line + ' ' + word, fontsize=fontsize) <= max_width:
+            current_line += ' ' + word
+        else:
+            lines.append(current_line)
+            current_line = word
+    lines.append(current_line)
+    return lines
+
+def paginate_wrapped_entries(toc_entries, font_size, page_width, page_height, left_margin, right_margin, top_margin, bottom_margin):
+    """Split entries across pages based on wrapped line count"""
+    usable_height = page_height - top_margin - bottom_margin
+    line_height = font_size * 1.5
+    lines_per_page = int(usable_height // line_height)
+
+    max_title_width = page_width - left_margin - right_margin - 80  # Adjusted to wrap earlier
+    pages = []
+    current_page = []
+    used_lines = 0
+
+    for entry in toc_entries:
+        level, title, page_num = entry
+        indent = 20 * (level - 1)
+        wrapped_lines = wrap_text(title, font_size, max_title_width - indent)
+        line_count = len(wrapped_lines)
+
+        if used_lines + line_count > lines_per_page:
+            pages.append(current_page)
+            current_page = []
+            used_lines = 0
+
+        current_page.append((entry, wrapped_lines))
+        used_lines += line_count
+
+    if current_page:
+        pages.append(current_page)
+
+    return pages
+
+def generate_toc_pages(pages, font_size, page_size):
     toc_doc = fitz.open()
     link_targets = []
-    width, height = fitz.paper_size("a4")
-    total_entries = len(toc_entries)
-    total_pages = math.ceil(total_entries / lines_per_page)
+    page_width, page_height = page_size
+    left_margin = 50
+    right_margin = 60
+    top_margin = 50
+    y_spacing = font_size * 1.5
 
-    for i in range(total_pages):
-        page = toc_doc.new_page(width=width, height=height)
-        start = i * lines_per_page
-        end = min(start + lines_per_page, total_entries)
-
-        for j, (level, title, target_page) in enumerate(toc_entries[start:end]):
-            y = 50 + j * font_size * 1.5
-            displayed_page = target_page + toc_page_count + 1
+    for page_index, entries in enumerate(pages):
+        page = toc_doc.new_page(width=page_width, height=page_height)
+        y = top_margin
+        for (level, title, target_page), wrapped_lines in entries:
             indent = 20 * (level - 1)
-            title_x = 50 + indent
-            max_page_number_x = width - 60  # Right margin for page numbers
+            x = left_margin + indent
+            page_number_str = str(target_page + len(pages) + 1)
+            page_number_width = fitz.get_text_length(page_number_str, fontsize=font_size)
+            max_x_for_dots = page_width - right_margin - page_number_width - 5
 
-            # Measure text widths
-            text_width = fitz.get_text_length(title, fontsize=font_size)
-            page_num_text = str(displayed_page)
-            page_num_width = fitz.get_text_length(page_num_text, fontsize=font_size)
+            for i, line in enumerate(wrapped_lines):
+                line_width = fitz.get_text_length(line, fontsize=font_size)
+                if i == len(wrapped_lines) - 1:
+                    dots_space = max_x_for_dots - (x + line_width + 10)
+                    dot_count = max(0, int(dots_space / fitz.get_text_length('.', fontsize=font_size)))
+                    dots = '.' * dot_count
+                else:
+                    dots = ''
+                page.insert_text((x, y), f"{line} {dots}", fontsize=font_size)
+                if i == len(wrapped_lines) - 1:
+                    page.insert_text((page_width - right_margin - page_number_width, y), page_number_str, fontsize=font_size)
+                y += y_spacing
 
-            # Determine dot space
-            dots_space = max_page_number_x - page_num_width - (title_x + text_width + 10)
-            num_dots = max(2, int(dots_space / fitz.get_text_length(".", fontsize=font_size)) - 6)
-            dots = "." * num_dots
-
-            # Insert title + dots
-            page.insert_text((title_x, y), f"{title} {dots}", fontsize=font_size)
-
-            # Right-align page number
-            page.insert_text((max_page_number_x - page_num_width, y), page_num_text, fontsize=font_size)
-
-            # Create link rectangle
-            rect = fitz.Rect(title_x, y - font_size, max_page_number_x, y + 5)
-            link_targets.append((i, rect, target_page))
+            rect = fitz.Rect(x, y - len(wrapped_lines)*y_spacing, page_width - right_margin, y)
+            link_targets.append((page_index, rect, target_page))
 
     return toc_doc, link_targets
 
-def add_toc_hyperlinks(doc, link_targets, toc_page_count):
+def add_toc_hyperlinks(doc, link_targets, toc_pages):
     for toc_page_index, rect, target_page in link_targets:
         doc[toc_page_index].insert_link({
             "kind": fitz.LINK_GOTO,
             "from": rect,
-            "page": target_page + toc_page_count
+            "page": target_page + toc_pages
         })
 
 def shift_bookmark_pages(bookmarks, offset):
-    shifted = []
-    for bm in bookmarks:
-        if len(bm) >= 3:
-            level, title, page_num = bm[:3]
-            shifted.append([level, title, page_num + offset])
-    return shifted
+    return [[lvl, title, pg + offset] for lvl, title, pg in bookmarks if len([lvl, title, pg]) >= 3]
 
 def add_existing_bookmarks(doc, bookmarks, offset):
-    shifted = shift_bookmark_pages(bookmarks, offset)
-    doc.set_toc(shifted)
+    doc.set_toc(shift_bookmark_pages(bookmarks, offset))
 
 def main():
     if len(sys.argv) < 4:
-        print("Usage: python create_toc_hypl.py input.pdf output.pdf font_size")
+        print("Usage: python script.py input.pdf output.pdf font_size")
         return
 
     input_pdf = sys.argv[1]
@@ -99,31 +127,32 @@ def main():
 
     print("Opening original PDF...")
     original = fitz.open(input_pdf)
-
-    print("Extracting original TOC...")
-    toc_entries = extract_toc_entries(original)
+    original_toc = extract_toc_entries(original)
     original_bookmarks = original.get_toc()
 
-    # Dynamically calculate lines per page
-    first_page = original[0]
-    width, height = first_page.rect.width, first_page.rect.height
-    portrait = height > width
-    page_height = max(width, height)  # always treat larger side as height
+    page_width, page_height = original[0].rect.width, original[0].rect.height
+    print(f"Page size: {page_width} x {page_height}")
 
+    print("Paginating TOC based on wrapped lines...")
+    left_margin = 50
+    right_margin = 60
     top_margin = 50
     bottom_margin = 50
-    usable_height = page_height - top_margin - bottom_margin
-    line_height = font_size * 1.5
-    lines_per_page = int(usable_height // line_height)
+    pages = paginate_wrapped_entries(
+        original_toc,
+        font_size,
+        page_width,
+        page_height,
+        left_margin,
+        right_margin,
+        top_margin,
+        bottom_margin
+    )
+    toc_pages = len(pages)
+    print(f"TOC will span {toc_pages} page(s)")
 
-    toc_page_count = math.ceil(len(toc_entries) / lines_per_page)
-
-    print(f"Page orientation: {'Portrait' if portrait else 'Landscape'}")
-    print(f"Calculated lines per page: {lines_per_page}")
-    print(f"TOC will span {toc_page_count} page(s)")
-
-    print("Generating TOC pages with hyperlinks...")
-    toc_pdf, link_targets = generate_toc_pages(toc_entries, font_size, lines_per_page, toc_page_count)
+    print("Generating TOC pages...")
+    toc_pdf, link_targets = generate_toc_pages(pages, font_size, (page_width, page_height))
 
     print("Merging TOC and original PDF...")
     final = fitz.open()
@@ -131,10 +160,10 @@ def main():
     final.insert_pdf(original)
 
     print("Adding TOC hyperlinks...")
-    add_toc_hyperlinks(final, link_targets, toc_page_count)
+    add_toc_hyperlinks(final, link_targets, toc_pages)
 
     print("Preserving original bookmarks...")
-    add_existing_bookmarks(final, original_bookmarks, toc_page_count)
+    add_existing_bookmarks(final, original_bookmarks, toc_pages)
 
     print("Saving final PDF...")
     final.save(output_pdf)
