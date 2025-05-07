@@ -92,7 +92,6 @@ This script generates a **Table of Contents (TOC)** for a PDF using its bookmark
 
 ### 📝 Usage
 
-```bash
 python create_toc_hypl.py input.pdf output.pdf font_size
 
 ## 🔄 End-to-End Workflow
